@@ -1,0 +1,103 @@
+.forecast {
+  height: 150vh;
+  padding: 63px 80px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+  &__btn {
+    padding-top: 2.6px;
+    border-radius: 40px;
+    width: 99px;
+    height: 38px;
+    cursor: pointer;
+    border: 1px solid #000;
+    background: #d9d9d9;
+  }
+  &__circle {
+    display: inline-block;
+    transition: all 0.5s;
+    transform: translateX(-23px);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #111;
+  }
+  &__dark {
+    transition: all 0.5s;
+    transform: translateX(23px);
+  }
+  &__form {
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 10px;
+      left: 18px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    input {
+      font-size: 18px;
+      color: #292929;
+      padding-left: 80px;
+      border: 1px solid #000;
+      border-radius: 40px;
+      width: 803px;
+      height: 62px;
+      box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);
+      background: #d9d9d9;
+    }
+  }
+  &__loc {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 14px 25px;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);
+    background: #4cbb17;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 25px 80px;
+    background-color: #d9d9d9;
+    li {
+      text-align: center;
+      border-radius: 40px;
+      max-width: 150px;
+      padding: 15px 10px;
+      background: linear-gradient(
+        145deg,
+        #f88508 0%,
+        rgba(246, 250, 217, 0) 100%
+      );
+    }
+  }
+}
+
+.dark-mode {
+  background: linear-gradient(
+    110.05deg,
+    #383838 0%,
+    rgba(158, 158, 158, 0) 71.82%
+  );
+}
+
+.light-mode {
+  transition: all 0.5s;
+  background: linear-gradient(135deg, #fff 0%, rgba(70, 97, 115, 0) 100%);
+}
+#js-light {
+  text-align: center;
+}

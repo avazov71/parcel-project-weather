@@ -1,0 +1,83 @@
+<section class="forecast js-forecast">
+  <div class="forecast__wrapper">
+    <div class="forecast__mode">
+      <button onclick="changeMode()" class="forecast__btn" id="js-mode">
+        <span class="forecast__circle"></span>
+      </button>
+      <p id="js-light">Light Mode</p>
+    </div>
+
+    <form class="forecast__form" id="form-submit">
+      <button>
+        <img src="./images/search.svg" alt="search" />
+      </button>
+      <input type="text" placeholder="Search for your preffered city..." />
+    </form>
+
+    <button class="forecast__loc">
+      <img src="./images/location.svg" alt="location" />
+      Current Location
+    </button>
+  </div>
+  <div class="forecast__wrapper weather">
+    <div class="weather__city">
+      <h2 id="city"></h2>
+
+      <h3 id="time"></h3>
+
+      <p id="date"></p>
+    </div>
+    <div class="weather__forecast info">
+      <div class="info__inner">
+        <h2><span id="temp"></span>°C</h2>
+        <h3>Feels like: <span id="feels-like"></span></h3>
+
+        <div class="info__box">
+          <img src="./images/sunrise-white.svg" alt="sunrise-icon" />
+          <p class="info__text">
+            <b>Sunrise</b>
+            <span id="info-sunrise">07:33 AM</span>
+          </p>
+        </div>
+        <div class="info__box">
+          <img src="./images/sunset-white.svg" alt="" />
+          <p class="info__text">
+            <b>Sunset</b>
+            <span id="info-sunset">18:01 AM</span>
+          </p>
+        </div>
+      </div>
+      <div class="info__inner">
+        <img width="150" id="info__icon" alt="icon" />
+        <h3 id="info__title"></h3>
+      </div>
+      <div class="info__inner2">
+        <div class="info__wrapper">
+          <img src="./images/humidity.svg" alt="Humidity" />
+          <p id="humidity"></p>
+          <p class="info__text">Humidity</p>
+        </div>
+        <div class="info__wrapper">
+          <img src="./images/wind.svg" alt="Wind" />
+          <p id="wind"></p>
+          <p class="info__text">Wind Speed</p>
+        </div>
+        <div class="info__wrapper">
+          <img src="./images/pressure-white.svg" alt="Pressure" />
+          <p id="pressure"></p>
+          <p class="info__text">Pressure</p>
+        </div>
+        <div class="info__wrapper2">
+          <img src="./images/uv-white.svg" alt="UV" />
+          <p id="uv"></p>
+          <p class="info__text">UV</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forecast__wrapper info">
+    <!-- <h2 class="forecast__title">Hourly Forecast:</h2> -->
+
+    <ul class="forecast__list" id="hourly-list"></ul>
+  </div>
+</section>

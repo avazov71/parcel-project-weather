@@ -1,0 +1,40 @@
+.weather {
+  padding: 20px;
+  margin-top: 50px;
+  &__city {
+    padding: 40px 0;
+    width: 30%;
+    min-height: 330px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    text-align: center;
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 96px;
+      background: linear-gradient(
+        48deg,
+        #292929 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  &__forecast {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+    min-height: 330px;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+  }
+}
