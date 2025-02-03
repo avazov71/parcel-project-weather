@@ -15,8 +15,6 @@ export const renderData = cityName => {
     city.textContent = location.name;
     time.textContent = localTime;
     date.textContent = localDate;
-
-    console.log(localDate);
   });
 };
 
@@ -72,7 +70,6 @@ export const renderForecast = cityName => {
       const li = document.createElement('li');
       const time = element.time.split(' ')[1];
       const condition = element.condition;
-      console.log(element);
 
       li.title = condition.text;
 
@@ -95,5 +92,6 @@ const search = event => {
   renderData(value);
   renderInfo(value);
   renderForecast(value);
+  event.target[1].value = '';
 };
 formSubmit.addEventListener('submit', search);
